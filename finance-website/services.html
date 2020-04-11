@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <a href="#default" class="logo"><em>realsol</em></a>
+        <div>
+            <nav>
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li class="dropdown"><a href="about.html">About Us</a>
+                  <li><a href="services.html">Services</a></li>
+                  <li><a href="contacts.html">Contacts</a></li>
+                </ul>
+              </nav>
+        </div>
+        </div>
+        <article>
+            <h2>services offered</h2>
+            
+                <p>RealSol limited is consultancy company that is readily and open to its customer.  
+                <p><em>Clients can consult for the following service on commission basis:</em></p>
+                <ul>
+                    <li>Personal Finance Training and Coaching-Savings, Budgeting.</li>
+                    <li>SMEs and MSEs Training on core Business functions.</li>
+                    <li>Business ideation and selection.</li>
+                    <li>Business Start-up Training .</li>
+                    <li>Business ICT Integration Solutions.</li>
+                </ul>
+                <div class="form">
+                    <form id="form"   method="post">
+                        <div class="row-10 clearfix">
+                            <div class="form-group w100">
+                                <h3>i would like to discuss</h3>
+                                <select id="services" name="form_subject" data-style="g-select" data-width="100%">
+                                    <option value="0" selected="">SME's & MSE's Training</option>
+                                    <option value="1">Business ideation</option>
+                                    <option value="2">Business Startup</option>
+                                    <option value="3">Business ICT integration</option>
+                                    <option value="4">Personal finance coaching</option>
+                                    <option value="5">Customer Insight</option>
+                                </select>
+                            </div>
+                            <div class="form-group w50">
+                                <input type="text" name="form_name" class="form-control" value="" placeholder="Name" required="">
+                            </div>
+                            <div class="form-group w50">
+                                <input type="text" name="form_phone" class="form-control" value="" placeholder="Phone">
+                            </div>
+                        </div> 
+                        <button type="submit" class="thm-btn">submit</button>     
+                   </form>
+                   <script>
+                       const form = document.getElementById('form');
+                             FormValidation.formValidation(form, {
+                               fields: {
+                                 form_name: {
+                                    validators: {
+                                     notEmpty: {
+                                        message: 'Your names are required'
+                                 }
+                            }
+                        },
+                              form_phone: {
+                                 validators: {
+                                    notEmpty: {
+                                    message: 'Your phone number is required'
+                                }
+                            }
+                        }
+                   </script>
+                
+        </article>
+        <section>
+            <img src="bgraph.jpeg"width=400 height=550>
+           
+        </section>
+</body>
+</html>
