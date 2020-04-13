@@ -33,7 +33,7 @@
                     <li>Business ICT Integration Solutions.</li>
                 </ul>
                 <div class="form">
-                    <form id="form"   method="post">
+                    <form id="form" action="services.html"  >
                         <div class="row-10 clearfix">
                             <div class="form-group w100">
                                 <h3>i would like to discuss</h3>
@@ -53,35 +53,15 @@
                                 <input type="text" name="form_phone" class="form-control" value="" placeholder="Phone">
                             </div>
                         </div> 
-                        <button type="submit" class="thm-btn">submit</button>     
+                
+                        <button type="submit" class="thm-btn" >submit</button>     
                    </form>
-                   <script>
-                       const form = document.getElementById('form');
-                             FormValidation.formValidation(form, {
-                               fields: {
-                                 form_name: {
-                                    validators: {
-                                     notEmpty: {
-                                        message: 'Your names are required'
-                                 }
-                            }
-                        },
-                              form_phone: {
-                                 validators: {
-                                    notEmpty: {
-                                    message: 'Your phone number is required'
-                                }
-                            }
-                       })         
-                    },   
-
-
-                    </script>
+                  
                 
         </article>
         <section>
             <img src="bgraph.jpeg"width=400 height=550>
            
         </section>
-</body>
+ </body>
 </html>
